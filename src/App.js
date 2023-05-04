@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+import CourseInfo from './components/CourseInfo';
 import GradeSheet from './components/GradeSheet';
 import Navbar from './components/Navbar';
 import NotFound from './pages/404';
@@ -27,6 +28,7 @@ function App() {
               <Route path='/grades' element={<Grades />} />
 
               {/* Non navbar routes */}
+              <Route path='/courses/student/course-info' element={<CourseInfo />} />
               <Route path='/grades/grade_sheet/:id' element={<GradeSheet />} />
               <Route path='*' element={ <NotFound />} />
             </Routes>

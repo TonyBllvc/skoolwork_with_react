@@ -27,7 +27,7 @@ const Grades = () => {
 
         <div className='w-full pl-0.5 mt-4 my-5 pt-1'>
           {/* a form for only the admin(course rep and assistant) */}
-          <section>
+          {/* <section>
             <form className="w-4/6 pl-16 pr-20 pb-8 ml-20 rounded-xl bg-white shadow-md shadow-slate-500" action="">
               <div className="flex items-center justify-center pt-5 pb-5">
                 <h1 className="text-2xl font-bold"> Course fill-in </h1>
@@ -70,10 +70,10 @@ const Grades = () => {
                         py-2.5 rounded-lg text-white font-bold" value="Submit" />
               </div>
             </form>
-          </section>
+          </section> */}
 
           {/* The table for filling */}
-          <div className="mt-28">
+          <div className="mt-2">
             <div className="w-full">
               <div className="grid grid-cols-4 py-5 px-3">
                 <div>
@@ -97,7 +97,7 @@ const Grades = () => {
                   <h2 className="text-blue-600 text-base"> Dr Mrs Anyaogu Mandaline </h2>
                 </div>
                 <div className="mx-2 flex justify-center items-center">
-                  <Link href='/user/course-info' className="py-1 px-3 bg-blue-600 text-base text-white hover:bg-blue-700 rounded-md shadow-lg shadow-slate-300" > View Info </Link>
+                  <Link to='/user/course-info' className="py-1 px-3 bg-blue-600 text-base text-white hover:bg-blue-700 rounded-md shadow-lg shadow-slate-300" > View Info </Link>
                 </div>
               </div>
             </div>

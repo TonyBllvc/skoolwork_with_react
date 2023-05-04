@@ -11,11 +11,11 @@ const Courses = () => {
         {/* This is a admin(course rep) page */}
         {/* the top section */}
         <div className='w-full mb-9 flex flex-row justify-start align-middle text-center items-center'>
-          <h1 className="text-gray-500 font-mono font-semibold"> Current Semester </h1>
-          <div className="flex items-end mx-2 justify-end">
+          <h1 className="text-gray-500 font-mono font-semibold"> Current Level and Semester </h1>
+          {/* <div className="flex items-end mx-2 justify-end">
             <BiRightArrowAlt className="text-gray-500 font-mono text-lg font-semibold" />
           </div>
-          <h2 className="text-blue-600 font-mono font-semibold"> Rain Semester <span> 2022/2023 </span> </h2>
+          <h2 className="text-blue-600 font-mono font-semibold"> Rain Semester <span> 2022/2023 </span> </h2> */}
         </div>
 
         <div className="mt-9 ">
@@ -77,27 +77,29 @@ const Courses = () => {
             <div className="w-full">
               <div className="grid grid-cols-4 py-5 px-3">
                 <div>
-                  <h2 className="mx-2 text-lg"> Course code </h2>
+                  <h2 className="mx-2 text-lg"> Department </h2>
                 </div>
                 <div>
-                  <h2 className="mx-2 text-lg"> Course title </h2>
+                  <h2 className="mx-2 text-lg"> Level </h2>
                 </div>
                 <div>
-                  <h2 className="mx-2 text-lg"> Course coordinator </h2>
+                  <h2 className="mx-2 text-lg"> Semester </h2>
                 </div>
               </div>
               <div className="bg-white grid grid-cols-4 rounded-lg shadow-lg hover:shadow-slate-800 py-2 px-3 mb-4">
                 <div className="mx-2 flex justify-start items-center">
-                  <h2 className="text-slate-600 text-base"> TNT104 </h2>
+                  <h2 className="text-slate-600 text-base"> Computer Science </h2>
                 </div>
                 <div className="mx-2 flex justify-start items-center">
-                  <h2 className="text-slate-600 text-base"> Management for information tech </h2>
+                  <h2 className="text-slate-600 text-base"> 100 </h2>
                 </div>
                 <div className="mx-2 flex justify-start items-center">
-                  <h2 className="text-blue-600 text-base"> Dr Mrs Anyaogu Mandaline </h2>
+                  <h2 className="text-blue-600 text-base"> 
+                  
+                   </h2>
                 </div>
                 <div className="mx-2 flex justify-center items-center">
-                  <Link href='/user/course-info' className="py-1 px-3 bg-blue-600 text-base text-white hover:bg-blue-700 rounded-md shadow-lg shadow-slate-300" > View Info </Link>
+                  <Link to='/courses/student/course-info' className="py-1 px-3 bg-blue-600 text-base text-white hover:bg-blue-700 rounded-md shadow-lg shadow-slate-300" > View Info </Link>
                 </div>
               </div>
             </div>
